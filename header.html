@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header_top">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" width="366" height="66" alt="Logo"></a>
+        </div>
+        <div class="navbar_menu">
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="development1.html">Development</a></li>
+                    <li><a href="digital_marketing.html">Digital Marketing</a></li>
+                    <li><a href="our-work.html">Our Works</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(function ($) {
+        var path = window.location.href;
+        $('.sidebarMenuInner li a').each(function () {
+            if (this.href === path) {
+                $(this).addClass('active');
+            }
+        });
+    });
+</script>

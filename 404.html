@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techymark</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background:#f7f7f7 ;">
+    <header class="header our_works-header" id="header">
+    </header>
+    <section class=" error-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="heading-error">
+                        <h2>Sorry, Page not found</h2>
+                        <a href="index.html" class="red-btn">Go to Homepage</a>
+                    </div>
+                    <div>
+                        <img src="images/img-404.jpeg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerCopyright">
+            <div class="container">
+                <div class="footerCopyright_Content">
+                    <p>© 2021 With <a href=""><img src="images/copyright_heart_icon.svg" alt=""></a> from Techymark</p>
+                    <div>
+                        <a href="index.html">Home</a> <span> | </span> <a href="javascript:void(0);">Privacy
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('#header').addClass("sticky_header");
+            } else {
+                $('#header').removeClass("sticky_header");
+            }
+        });
+
+    </script>
+
+</html>

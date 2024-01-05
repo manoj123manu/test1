@@ -1,0 +1,4327 @@
+    html {
+        font-size: 100%
+    }
+
+    * {
+        font-family: 'Ubuntu', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    main,
+    nav,
+    section,
+    summary,
+    title {
+        display: block
+    }
+
+    .page-wrap {
+        min-height: 70vh;
+    }
+
+    .page-error h2 {
+        font-size: 8vw;
+        font-weight: 500;
+    }
+
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 15px;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    form,
+    fieldset,
+    legend,
+    input,
+    textarea,
+    p,
+    blockquote,
+    th,
+    td {
+        margin: 0;
+        padding: 0
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    fieldset,
+    img {
+        border: 0
+    }
+
+    ol,
+    ul {
+        list-style: none
+    }
+
+    sub,
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline
+    }
+
+    sup {
+        top: -0.5em
+    }
+
+    sub {
+        bottom: -0.25em
+    }
+
+    * {
+        outline: none !important;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+
+    a:active,
+    a:focus,
+    a:hover,
+    input[type="image"],
+    select:focus,
+    input,
+    input[type="button"]:focus,
+    :focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .clearfix {
+        *zoom: 1
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: block;
+        content: "";
+        line-height: 0
+    }
+
+    .clearfix:after {
+        clear: both
+    }
+
+    .clear {
+        clear: both
+    }
+
+    .btn {
+        outline: 0px;
+    }
+
+    .lists {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mainpage {
+        position: relative;
+        overflow: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    .accordion-body,
+    a {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #6e6e6e;
+        line-height: 26px;
+    }
+
+    .container {
+        width: 1170px !important;
+        margin: auto;
+        padding: 0 15px
+    }
+
+    img {
+        height: auto;
+    }
+
+    /*----Home start---*/
+    .sticky_header .header_top .logo img {
+        max-width: 230px;
+    }
+
+    .header .container {
+        width: 1280px !important;
+    }
+
+    .header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        transition: all 1s ease;
+    }
+
+    .header_top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 38px 0;
+    }
+
+    .sticky_header {
+        transition: all .5s ease-in-out;
+        height: 70px;
+        background: rgba(0, 0, 0, .9);
+        display: flex;
+        align-items: center;
+        z-index: 999999;
+    }
+
+    .sticky_header .header_top {
+        padding: 0;
+    }
+
+    .logo img {
+        max-width: 366px;
+    }
+
+    .navbar_menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    input[type="checkbox"]:checked~#sidebarMenu {
+        transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        /* top: 22px; */
+        top: 26px;
+        right: 15px;
+        height: 22px;
+        width: 22px;
+        display: none;
+    }
+
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
+
+    .sidebarMenuInner {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .sidebarMenuInner li {
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        margin: 0 10px;
+    }
+
+    .sidebarMenuInner li a.active {
+        background: #024C50;
+        border: 1px solid #0CDBE6;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #00E0CF;
+    }
+
+    .sidebarMenuInner li a {
+        cursor: pointer;
+        padding: 5px 10px;
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    .sidebarMenuInner li a:hover {
+        color: #00E0CF;
+    }
+
+    input[type=checkbox] {
+        transition: all .3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .home_outer .container {
+        width: 1280px !important;
+    }
+
+    .home_outer {
+        background: radial-gradient(36.84% 42.78% at 51.8% 50%, #05AAC6 0%, #025A68 100%);
+        background-size: cover;
+        padding: 125px 0 90px;
+        margin: 0;
+        display: flex;
+        background-position: bottom;
+        height: 100%;
+    }
+
+    .home_outer .home_outer_Slider_Content {
+        margin: 0;
+        padding: 90px 0 10px;
+        display: flex;
+    }
+
+    .home_outer .home_outer_Slider_Content .left_Part {
+        width: 60%;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part {
+        width: 40%;
+        margin: 10px 0 0 -20px;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 124.68%;
+        color: #FFFFFF;
+        margin: 0 0 20px 0;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 124.68%;
+        text-align: justify;
+        color: #FFFFFF;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social {
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        max-width: 85%;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li {
+        margin: 0;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a {
+        background: #fff;
+        width: 46px;
+        height: 46px;
+        display: block;
+        line-height: 46px;
+        border-radius: 100px;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a:hover {
+        background: #026B7C;
+    }
+
+    .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a:hover img {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(29%) saturate(6768%) hue-rotate(121deg) brightness(92%) contrast(105%);
+    }
+
+    /*home aBoutSection*/
+    .HomeAbout_Outer {
+        padding: 70px 0;
+    }
+
+    .HomeAbout_Outer .HomeAbout_Outer_Content {
+        text-align: center;
+        padding: 0 110px;
+    }
+
+    .HomeAbout_Outer .HomeAbout_Outer_Content h3 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 134.5%;
+        text-align: center;
+        color: #3F3D56;
+    }
+
+    .HomeAbout_Outer .HomeAbout_Outer_Content span {
+        display: block;
+        margin: 10px 0 10px;
+    }
+
+    .HomeAbout_Outer .HomeAbout_Outer_Content p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F3D56;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    /*AboutMain Section*/
+    .AboutUs_Main {
+        margin: 0;
+        background: url(../images/AboutMain_Banner.png) no-repeat;
+        padding: 110px 0 80px;
+        background-size: cover;
+    }
+
+    .AboutUs_Main_Content {
+        background: #FFFFFF;
+        opacity: 0.94;
+        border: 1px solid #026B7C;
+        border-radius: 17px;
+        padding: 24px 54px 34px;
+        max-width: 895px;
+        margin: auto;
+        position: relative;
+    }
+
+    .AboutUs_Main_Content h3 {
+        margin: 0;
+        position: absolute;
+        top: -30px;
+        left: 70px;
+        background: #026B7C;
+        border: 1px solid #026B7C;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+        padding: 13px 20px;
+    }
+
+    .AboutUs_Main_Content p {
+        margin: 25px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F3D56;
+    }
+
+    /*home Techymark Advantages*/
+    .Techymark_Advantages {
+        padding: 70px 0;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content {
+        margin: 0;
+        text-align: center;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content h3 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 20px;
+        display: inline-block;
+        margin: auto;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+        margin: 140px auto 0;
+        gap: 70px;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li {
+        width: 100%;
+        position: relative;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -25px;
+        background: linear-gradient(263.06deg, #00ABB4 44.85%, #026B7C 104.6%);
+        width: 373px;
+        height: 184px;
+        border-radius: 100px;
+        z-index: -1;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li:after {
+        position: absolute;
+        content: "";
+        right: -70px;
+        top: -45px;
+        background: #fff;
+        width: 316px;
+        height: 269px;
+        border-radius: 0;
+        transform: rotate(120deg);
+        z-index: -1;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box {
+        background: #FAFFFF;
+        border-radius: 15px;
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+        max-width: 425px;
+        float: right;
+        position: relative;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(to bottom right, #22c1c3, #fdbb2d);
+        z-index: 99;
+        border-radius: 10px;
+        border: 5px solid transparent;
+        background: #f2f2f2;
+        background-clip: padding-box;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box:after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(263.06deg, #00ABB4 44.85%, #026B7C 104.6%);
+        z-index: 9;
+        border-radius: 10px;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer {
+        position: relative;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        min-height: 100px;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        text-align: center;
+        color: #026B7C;
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div:first-child {
+        width: 75%;
+    }
+
+    .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div img {
+        max-width: 60px;
+    }
+
+    /*What We do*/
+    .whatWeDo_Outer {
+        padding: 90px 0;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(57, 116, 125, 0.61) 0%, #39747D 100%);
+    }
+
+    .whatWeDo_Outer_Heading {
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .whatWeDo_Outer_Heading h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whatWeDo_Outer_Heading p {
+        width: auto;
+        background: #FFFFFF;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #026B7C;
+        padding: 7px 12px 11px 29px;
+        margin: 0 20px 0 0px;
+    }
+
+    .whatWeDo_Outer_ListingBox {
+        margin: 0;
+    }
+
+    .whatWeDo_Outer_ListingBox ul {
+        max-width: 93%;
+        margin: auto;
+        display: grid;
+        gap: 56px;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li {
+        margin: 0;
+        position: relative;
+        padding: 13px;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: rgba(237, 237, 255, 0.39);
+        opacity: 0.94;
+        border-radius: 5px;
+        width: calc(100% - 200px);
+        height: 100%;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 999;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part {
+        width: 100%;
+        max-width: 370px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 9px;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part {
+        width: calc(100% - 370px);
+        float: right;
+        padding: 50px;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part img {
+        width: 100%;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part h3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    /*TechMark Benifits*/
+    .TechMark_Benifits {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .TechMark_Benifits img {
+        width: 100%;
+    }
+
+    /*Footer*/
+    .footer_Top {
+        background: #32313d;
+        padding: 50px 0;
+    }
+
+    .footer_Top .footer_Top_content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_Top .footer_Top_content .left_Part {
+        width: 40%;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterLogo {
+        margin: 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterLogo p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 123.41%;
+        text-align: justify;
+        color: #FFFFFF;
+        margin: 40px 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices {
+        margin: 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin: 0 0 25px 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul {
+        margin: 0;
+        display: grid;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul li {
+        margin: 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul li a {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul li a i {
+        margin: 0 6px 0 0;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul li a:hover {
+        color: #00E0CF;
+    }
+
+    .footer_Top .footer_Top_content .left_Part .FooterServices ul li a:hover img {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(29%) saturate(6768%) hue-rotate(121deg) brightness(92%) contrast(105%);
+    }
+
+    .footer_Top .footer_Top_content .right_Part {
+        width: 40%;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact {
+        margin: 30px 0 0 0;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 30px 0;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul {
+        margin: 0;
+        display: grid;
+        gap: 35px;
+        padding-left: 0;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul li {
+        margin: 0;
+        line-height: normal;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul li a {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul li a i {
+        display: block;
+        float: left;
+        margin-right: 16px;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul li a p {
+        float: left;
+        color: #fff;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .Footercontact ul li a p {
+        margin-bottom: 0;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .footerSocial {
+        margin: 0;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .footerSocial ul {
+        display: flex;
+        margin: 40px 0 0 25px;
+        gap: 30px;
+    }
+
+    .footer_Top .footer_Top_content .right_Part .footerSocial ul li:hover a img {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(29%) saturate(6768%) hue-rotate(121deg) brightness(92%) contrast(105%);
+    }
+
+    .footerCopyright {
+        background: #18181B;
+        padding: 15px 0;
+    }
+
+    .footerCopyright .footerCopyright_Content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerCopyright .footerCopyright_Content p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 123.41%;
+        text-align: justify;
+        color: #FFFFFF;
+    }
+
+    .footerCopyright .footerCopyright_Content div,
+    .footerCopyright .footerCopyright_Content div a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 123.41%;
+        text-align: justify;
+        color: #FFFFFF;
+    }
+
+    .footerCopyright .footerCopyright_Content div a:hover {
+        color: #00E0CF;
+    }
+
+    .footerCopyright .footerCopyright_Content div span {
+        margin: 0 5px;
+    }
+
+    /*----Home start---*/
+    /*Development Page Start*/
+    .Development_Banner_Outer .container {
+        width: 1280px !important;
+    }
+
+    .Development_Banner_Outer {
+        background: radial-gradient(36.84% 42.78% at 51.8% 50%, #05AAC6 0%, #025A68 100%);
+        background-size: cover;
+        padding: 125px 0 40px;
+    }
+
+    .Development_Banner {
+        margin: auto;
+        width: 100%;
+        padding: 0 25px;
+        position: relative;
+    }
+
+    .Development_Banner span img {
+        width: 100%;
+        position: relative;
+    }
+
+    .Development_Banner .Development_Banner_text {
+        position: absolute;
+        top: 80px;
+        left: 90px;
+    }
+
+    .Development_Banner .Development_Banner_text h2 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 124.68%;
+        color: #FFFFFF;
+        margin: 0 0 20px 20px;
+    }
+
+    .Development_Banner .Development_Banner_text p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 124.68%;
+        text-align: justify;
+        color: #FFFFFF;
+    }
+
+    /*Recommended Text*/
+    .recommended_Text {
+        padding: 40px 0 30px;
+        text-align: center;
+    }
+
+    .recommended_Text span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 149.41%;
+        text-align: center;
+        color: #3F4249;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    .recommended_Text p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.41%;
+        text-align: center;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    /*technologies_Development*/
+    .technologies_Development {
+        margin: 0;
+        background: linear-gradient(180deg, rgba(190, 190, 190, 0.22) 0%, rgba(199, 199, 199, 0.51) 100%);
+        padding: 85px 0 60px;
+    }
+
+    .technologies_Development .technologies_Development_content h3 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 30px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .technologies_Development .technologies_Development_content {
+        margin: 0;
+    }
+
+    .technologies_Development .technologies_Development_boxes {
+        max-width: 1000px;
+        width: 100%;
+        margin: 70px auto 0px;
+        text-align: center;
+    }
+
+    .technologies_Development .technologies_Development_boxes ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .technologies_Development .technologies_Development_boxes ul li {
+        width: 100%;
+        display: none;
+    }
+
+    .technologies_Development .technologies_Development_boxes ul li {
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(35px);
+        border-radius: 5px;
+        padding: 50px 24px 24px 24px;
+        text-align: center;
+    }
+
+    .technologies_Development .technologies_Development_boxes ul li p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 139.68%;
+        text-align: justify;
+        color: #3F4249;
+    }
+
+    .technologies_Development .technologies_Development_boxes .whiteBtn {
+        background: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #000000;
+        padding: 10px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .ourProcess_Development {
+        padding: 70px 0 120px;
+    }
+
+    .ourProcess_Development .ourProcess_Development_Content {
+        margin: 0;
+    }
+
+    .ourProcess_Development .ourProcess_Development_Content h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 30px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 50px 0;
+    }
+
+    .ourProcess_Development_Inner01 {
+        margin: 0 0 70px 20px;
+    }
+
+    .ourProcess_Development_Inner01:last-child {
+        margin-bottom: 0;
+    }
+
+    .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #3F4249;
+        margin: 0 0 60px 0;
+    }
+
+    .ourProcess_Development_Inner01 span img {
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .ourProcess_Development_Inner01 span img.Ourprocess_img02 {
+        max-width: 70%;
+    }
+
+    /*Contact Us Page Start*/
+    .Contact_Banner_Top {
+        background: radial-gradient(36.84% 42.78% at 51.8% 50%, #05AAC6 0%, #025A68 100%);
+        background-size: cover;
+        padding: 125px 0 10px;
+        position: relative;
+    }
+
+    .Contact_Banner_Top:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: #fff;
+        z-index: 1;
+    }
+
+    .Contact_Banner_Top .container {
+        width: 1280px !important;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        position: relative;
+        z-index: 9;
+        padding: 0 20px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left {
+        width: 30%;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right {
+        width: 70%;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li {
+        width: 100%;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li span {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li span img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a {
+        width: 67px;
+        height: 67px;
+        display: block;
+        background: #fff;
+        border-radius: 100px;
+        line-height: 60px;
+        margin: auto;
+        text-align: center;
+        transition: transform .5s ease;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a img {
+        max-width: 30px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a {
+        background: #024C50;
+        border: 3px solid #0CDBE6;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a img {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(29%) saturate(6768%) hue-rotate(121deg) brightness(92%) contrast(105%);
+        max-width: 27px;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 124.68%;
+        text-align: justify;
+        color: #FFFFFF;
+        margin: 0 0 40px 0;
+    }
+
+    .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 124.68%;
+        color: #026B7C;
+        text-align: center;
+        margin: 0;
+    }
+
+    /*get Touch Forms*/
+    .ContactGet_Touch {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(227, 227, 227, 0.53) 0%, #E3E3E3 100%);
+        padding: 25px 0 40px;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms {
+        width: 55%;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Map {
+        width: 65%;
+        margin-top: 50px;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 124.68%;
+        color: #026B7C;
+        text-align: center;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 124.68%;
+        color: #026B7C;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul {
+        display: grid;
+        margin: 50px 0 0 0;
+        gap: 20px;
+        max-width: 300px;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input.form-control {
+        background: #C4C4C4;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 124.68%;
+        color: #026B7C;
+        border: none;
+        border-radius: 0;
+        padding: 8px 10px;
+        height: auto;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 124.68%;
+        color: #026B7C;
+        font-style: normal;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li textarea.form-control {
+        background: #C4C4C4;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 124.68%;
+        color: #026B7C;
+        border: none;
+        border-radius: 0;
+        padding: 8px 10px;
+        height: 154px;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li a.submit_Btn {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #00E0CF;
+        background: #024C50;
+        border: 1px solid #0CDBE6;
+        border-radius: 5px;
+        padding: 6px 10px 7px 12px;
+        margin: 5px auto 0;
+        display: block;
+        max-width: 110px;
+        text-align: center;
+    }
+
+    .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Map img {
+        width: 100%;
+    }
+
+    /*Digital marketing Page Start Here*/
+    .digital_marketing_banner {
+        padding: 150px 0 55px;
+    }
+
+    .digital_marketing_banner .Development_Banner_text {
+        left: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .digital_marketing_banner .Development_Banner_text h2 {
+        margin-left: 0;
+    }
+
+    .digital_marketing_banner .Development_Banner_text p {
+        text-align: center;
+    }
+
+    .digital_achieve {
+        background: radial-gradient(59.04% 59.04% at 50% 43.85%, rgba(255, 255, 255, 0.48) 0%, rgba(190, 190, 190, 0.41) 100%);
+        padding: 40px 0;
+    }
+
+    .digital_achieve .digital_achieve_content {
+        margin: 0;
+        padding: 0 35px;
+    }
+
+    .digital_achieve .digital_achieve_content p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: center;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    .digital_achieve .digital_achieve_content h2 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 155.18%;
+        color: #3F4249;
+        margin: 40px 0 10px 0;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner {
+        margin: 40px 0 0 0;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner h3 {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 155.18%;
+        color: #3F4249;
+        text-align: center;
+        margin: 0;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul {
+        margin: 30px auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 670px;
+        position: relative;
+        gap: 70px 0;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(280deg, #026B7C, #00E0CF, #0096BA);
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul:after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background-image: linear-gradient(280deg, #026B7C, #00E0CF, #0096BA);
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li {
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        color: #3F4249;
+        margin: 0;
+        text-align: left;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li span {
+        display: inline-block;
+    }
+
+    .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li span img {
+        max-width: 220px;
+        margin-bottom: 30px;
+    }
+
+    /*Search engine Marketing*/
+    .SearchMarketing {
+        background: radial-gradient(42.3% 59.04% at 50% 43.85%, rgba(255, 255, 255, 0.21) 0%, rgba(4, 147, 171, 0.12) 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        ;
+        padding: 65px 0 40px;
+    }
+
+    .SearchMarketing .SearchMarketing_content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .SearchMarketing .SearchMarketing_content h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 35px;
+        display: inline-block;
+        margin: 0 auto 30px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .SearchMarketing .SearchMarketing_content span img {
+        width: 100%;
+        max-width: 690px;
+        margin: 30px auto;
+    }
+
+    .SearchMarketing .SearchMarketing_content p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: center;
+        color: #3F4249;
+        padding: 0 60px;
+        margin: 0;
+    }
+
+    .SearchMarketing .SearchMarketing_content h3 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #3F4249;
+        margin: 30px 0 10px;
+    }
+
+    .SearchMarketing .SearchMarketing_content ul {
+        text-align: left;
+        list-style: disc;
+        margin: 0 0 0 45px;
+        max-width: 79%;
+    }
+
+    .SearchMarketing .SearchMarketing_content ul li {
+        margin-bottom: 5px;
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F4249;
+    }
+
+    .SearchMarketing .SearchMarketing_content ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /*Search Engine Optimization*/
+    .search_optimization {
+        padding: 60px 0 40px;
+    }
+
+    .search_optimization .search_optimization_content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .search_optimization .search_optimization_content h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 35px;
+        display: inline-block;
+        margin: 0 auto 30px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .search_optimization .search_optimization_content ul {
+        display: grid;
+        gap: 0px;
+        max-width: 80%;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .search_optimization .search_optimization_content ul li {
+        margin: 0;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxImg {
+        width: 40%;
+        position: relative;
+        z-index: 99;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxImg img {
+        width: 100%;
+        max-width: 284px;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText {
+        width: 60%;
+        padding: 15px 30px 15px 0px;
+        position: relative;
+        z-index: 99;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% - 180px);
+        height: 150px;
+        background: linear-gradient(93.17deg, #D7E2E1 18.36%, rgba(220, 253, 250, 0.54) 102.98%);
+        border-radius: 15px;
+        padding: 15px;
+        border: solid 1px #A3D0CE;
+    }
+
+    .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 145.18%;
+        text-align: left;
+        color: #3F4249;
+    }
+
+    .search_optimization .search_optimization_content ul li:nth-child(2n) .search_optimization_content_box {
+        flex-direction: row-reverse;
+    }
+
+    .search_optimization .search_optimization_content ul li:nth-child(2n) .search_optimization_content_box:after {
+        left: 0;
+    }
+
+    .search_optimization .search_optimization_content ul li:nth-child(2n) .search_optimization_boxText {
+        padding: 15px 0px 15px 30px;
+    }
+
+    .search_optimization .search_optimization_content .search_optimization_content_Banner {
+        margin: 30px 0;
+        position: relative;
+    }
+
+    .search_optimization .search_optimization_content .search_optimization_content_Banner img {
+        width: 100%;
+        position: relative;
+    }
+
+    .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text {
+        background: #E2FAF8;
+        border-radius: 15px;
+        padding: 26px 15px 26px 15px;
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        left: 50%;
+        width: 100%;
+    }
+
+    .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: center;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    .search_optimization_achieve {
+        margin: 0;
+        text-align: left;
+    }
+
+    .search_optimization_achieve h3 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145.18%;
+        text-align: justify;
+        color: #3F4249;
+        margin: 0 0 10px 0;
+    }
+
+    .search_optimization_achieve ul {
+        margin: 0 0 20px 45px !important;
+        width: 100%;
+        display: block !important;
+        max-width: calc(100% - 45px) !important;
+        text-align: left;
+        list-style: disc;
+    }
+
+    .search_optimization_achieve ul li {
+        margin-bottom: 5px !important;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F4249;
+    }
+
+    .search_optimization_achieve p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    /*Social Media Marketing Page*/
+    .Social_MediaMarketing {
+        background: radial-gradient(59.04% 59.04% at 50% 43.85%, rgba(255, 255, 255, 0.48) 0%, rgba(190, 190, 190, 0.41) 100%);
+        padding: 60px 0;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content {
+        margin: 0;
+        text-align: center;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 35px;
+        display: inline-block;
+        margin: 0 auto 20px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group {
+        margin: 0;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group p {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #026B7C;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a:hover {
+        color: #00E0CF;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span img {
+        max-width: 400px;
+        margin: 30px 0;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 139.7%;
+        text-align: center;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span.large2X img {
+        max-width: 550px;
+    }
+
+    .Social_MediaMarketing_UserList {
+        margin: 0;
+        text-align: left;
+    }
+
+    .Social_MediaMarketing_UserList h3 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 145.18%;
+        text-align: justify;
+        color: #3F4249;
+        margin: 0 0 10px 0;
+    }
+
+    .Social_MediaMarketing_UserList ul {
+        margin: 0 0 20px 45px !important;
+        width: 100%;
+        display: block !important;
+        max-width: 78% !important;
+        text-align: left;
+        list-style: disc;
+    }
+
+    .Social_MediaMarketing_UserList ul li {
+        margin-bottom: 5px !important;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F4249;
+    }
+
+    .Social_MediaMarketing_UserList p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: justify;
+        color: #3F4249;
+        margin: 0;
+    }
+
+    /*Sms Marketing*/
+    .Sms_Marketing {
+        margin: 0;
+        background: #fff;
+        padding: 60px 0 30px;
+        text-align: center;
+    }
+
+    .Sms_Marketing .Sms_Marketing_Content h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 35px;
+        display: inline-block;
+        margin: 0 auto 20px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .Sms_Marketing .Sms_Marketing_Content span img {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .Sms_Marketing .Sms_Marketing_Content span {
+        width: 100%;
+        display: block;
+        margin: 30px 0;
+    }
+
+    .Sms_Marketing .Sms_Marketing_Content p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139.7%;
+        text-align: left;
+        color: #3F4249;
+    }
+
+    .Sms_Marketing_Content p {
+        text-align: center !important;
+    }
+
+    .WhatsApp_Marketing .Sms_Marketing_Content span img {
+        max-width: 160px;
+    }
+
+    .Social_MediaMarketing_UserList p {
+        text-align: left !important;
+    }
+
+    /* mukesh css */
+    .font-30 {
+        font-size: 30px;
+    }
+
+    .font-20 {
+        font-size: 20px;
+        color: #026B7C;
+        font-weight: 700;
+    }
+
+    .font-18 {
+        font-size: 18px;
+        color: #000000;
+    }
+
+    .text-green {
+        color: #026B7C !important;
+    }
+
+    .ptb-50 {
+        padding: 7vh 0;
+    }
+
+    .ptb-80 {
+        padding: 4% 0;
+    }
+
+    .our-works {
+        background-color: #F8F4F4;
+    }
+
+    .our-works h3 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 30px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #FFFFFF;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #ourwork-tab {
+        gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding-bottom: 4%;
+    }
+
+    #ourwork-tab img {
+        display: block;
+        margin: auto;
+        padding-top: 10%;
+    }
+
+    #ourwork-tab button {
+        display: block;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        background-color: #ffff;
+        height: 100%;
+        width: 100%;
+        font-size: 32px;
+        color: #3F3D56;
+        padding: 10%;
+    }
+
+    #ourwork-tab .nav-link.active {
+        border: 1px solid #026B7C;
+    }
+
+    #ourwork-tab li {
+        flex: 0 0 33%;
+    }
+
+    #our-workContent {
+        padding: 7% 0;
+    }
+
+    #our-workContent img {
+        margin: auto;
+        display: block;
+    }
+
+    #our-workContent .tab-title {
+        margin-bottom: 3%;
+    }
+
+    .load-more {
+        display: flex;
+        gap: 1%;
+        justify-content: center;
+        margin-top: 3%;
+        align-items: center;
+    }
+
+    .our-works .load-more img {
+        display: inline-block !important;
+        margin: unset !important;
+    }
+
+    .our-works-tabs {
+        background-color: #fff;
+    }
+
+    .our-works .tab-pane-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 4%;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .tab-pane-link img {
+        position: relative;
+    }
+
+    .our-works .tab-pane-img.tab-pane-img-grid-2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .our-works .tab-pane-link a {
+        background-color: #fff;
+        position: absolute;
+        bottom: 10px;
+        margin-left: 100px;
+        padding: 12px 8px;
+        text-decoration: underline !important;
+    }
+
+    .design_banner_text p {
+        text-align: center !important;
+    }
+
+    .design_banner_text {
+        position: unset !important;
+        margin-top: 3%;
+    }
+
+    .design-text-box {
+        background-color: #E5F5FF;
+        padding: 4% 0;
+    }
+
+    .design-text-box img {
+        margin-top: 4%;
+    }
+
+    .our-works-tabs ul li {
+        width: 100%;
+        /* display: none; */
+    }
+
+    .aesthetic-sec {
+        background: #fff !important;
+    }
+
+    .aesthetic-sec ul {
+        list-style: decimal;
+
+        margin-top: 3%;
+        padding-left: 6%;
+    }
+
+    .aesthetic-sec p {
+        font-size: 18px;
+        color: #3F4249;
+    }
+
+    .ourProcess_design-text h4 {
+        position: relative;
+        display: inline;
+    }
+
+    .ourProcess_design-text h4::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: rgb(2, 107, 124);
+        background: linear-gradient(90deg, rgba(2, 107, 124, 1) 0%, rgba(0, 224, 207, 1) 48%, rgba(2, 107, 124, 1) 100%);
+    }
+
+    /* .ourProcess_design {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } */
+    .ourProcess_design {
+        display: flex;
+        gap: 15px;
+    }
+
+    .ourProcess_design_leftul,
+    .ourProcess_design_rightul {
+        flex: 0 0 35%;
+    }
+
+    .ourProcess_design_leftul {
+        text-align: end;
+    }
+
+    .ourProcess_design_leftul li:last-child {
+        margin-top: 155px;
+    }
+
+    .ourProcess_design_rightul li:last-child {
+        margin-top: 90px;
+    }
+
+    .ourProcess_design_rightul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .ourProcess_Design {
+        background: #E0E0E0;
+        padding: 5% 0;
+    }
+
+    .trendy_web_app {
+        background: rgb(57, 116, 125);
+        background: radial-gradient(circle, rgba(57, 116, 125, 0.6502976190476191) 0%, rgba(57, 116, 125, 1) 100%);
+    }
+
+    .trendy_web_app-text p,
+    .sleek-web-text ul p {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .sleek-web-text {
+        padding: 5% 0;
+    }
+
+    .sleek-web-text ul {
+        list-style: disc;
+        color: #fff;
+        padding-left: 3rem;
+        padding-top: 2%;
+    }
+
+    .row.ux_design-text {
+        flex-direction: row-reverse;
+        justify-content: end;
+        margin-top: 3%;
+    }
+
+    .our_works-header {
+        background: radial-gradient(36.84% 42.78% at 51.8% 50%, #05AAC6 0%, #025A68 100%);
+        background-size: cover;
+    }
+
+    .our_works-header .header_top {
+        padding: 13px 0;
+    }
+
+    .our-works {
+        padding-top: 8%;
+    }
+
+    .error-page {
+        background: #f7f7f7;
+        margin-top: clamp(70px, 4vw, 120px);
+        height: calc(100vh - 120px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .heading-error h2 {
+        font-size: clamp(20px, 5vw, 40px);
+        font-weight: 700;
+        margin-bottom: 2%;
+    }
+
+    .red-btn {
+        background: #f9624c;
+        border-radius: 100px;
+        padding: 1% 3%;
+        display: inline-block;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .red-btn:hover {
+        color: #F8F4F4;
+    }
+
+    .noContent {
+        display: none;
+    }
+
+    /*Our Work*/
+    .our-works .our-works-Heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .our-works .our-works-Heading h2 {
+        background: #026B7C;
+        border-radius: 3px;
+        padding: 13px 30px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 50px 0;
+    }
+
+    .our_Work_Portfolio {
+        margin: 0 0 100px 0;
+    }
+
+    .our_Work_Portfolio ul {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .our_Work_Portfolio ul li {
+        width: 100%;
+    }
+
+    .our_Work_Portfolio ul li img {
+        width: 100%;
+    }
+
+    .tab-content>.active p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        .logo img {
+            max-width: 240px;
+        }
+
+        .home_outer {
+            padding: 90px 0 50px;
+        }
+
+        .home_outer .home_outer_Slider_Content .left_Part {
+            width: 50%;
+        }
+
+        .home_outer .home_outer_Slider_Content .left_Part img {
+            max-width: 100%;
+        }
+
+        .AboutUs_Main {
+            padding: 80px 0 40px;
+        }
+
+        .AboutUs_Main_Content {
+            padding: 15px 36px 21px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -15px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:after {
+            position: absolute;
+            content: "";
+            right: -70px;
+            top: -20px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .Development_Banner .Development_Banner_text h2 {
+            font-size: 28px;
+        }
+
+        .Development_Banner .Development_Banner_text p {
+
+            font-size: 17px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .our-works h3 {
+            font-size: 22px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left {
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right {
+            width: 66%;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content {
+            padding: 0 0px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a img {
+            max-width: 23px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul {
+            display: grid;
+            margin: 30px 0 0 0;
+            gap: 15px;
+            max-width: 80%;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3 {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: left;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left h2 {
+            font-size: 30px;
+        }
+
+        .Contact_Banner_Top .container,
+        .header .container {
+            max-width: 100%;
+            width: 100% !important;
+        }
+
+        .Contact_Banner_Top {
+            padding: 80px 0 10px;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        .home_outer .home_outer_Slider_Content .right_Part {
+            width: 50%;
+            margin: 10px 0 0 10px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left {
+            width: 40%;
+            margin-top: -4px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right {
+            width: 60%;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms p {
+            font-size: 15px;
+        }
+
+        .container,
+        .Contact_Banner_Top .container {
+            max-width: 100%;
+            width: 100% !important;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content p {
+            max-width: 100%;
+        }
+
+        .AboutUs_Main_Content {
+            padding: 12px 26px 12px;
+        }
+
+        .AboutUs_Main {
+            padding: 50px 0 30px;
+        }
+
+        .Development_Banner .Development_Banner_text h2 {
+            font-size: 26px;
+        }
+
+        .Development_Banner .Development_Banner_text p {
+
+            font-size: 16px;
+        }
+
+        .AboutUs_Main_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .technologies_Development .technologies_Development_content h3,
+        .whatWeDo_Outer_Heading p,
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .SearchMarketing .SearchMarketing_content h2,
+        .search_optimization .search_optimization_content h2,
+        .Social_MediaMarketing .Social_MediaMarketing_content h2,
+        .Sms_Marketing .Sms_Marketing_Content h2 {
+            font-size: 22px;
+            line-height: 34px;
+            padding: 9px 14px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            max-width: 80%;
+            margin: 90px auto 0;
+            row-gap: 90px;
+            column-gap: 40px;
+        }
+
+        .Techymark_Advantages,
+        .whatWeDo_Outer,
+        .technologies_Development {
+            padding: 52px 0 75px;
+        }
+
+        .technologies_Development .technologies_Development_boxes {
+            margin: 5% auto 0px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 17px;
+            padding: 0 7px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div img {
+            max-width: 50px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+            top: -11px;
+            height: 155px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:after {
+            top: -60px;
+            /* width: 297px; */
+            height: 301px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 90%;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+            top: -16px;
+            width: 360px;
+            height: 163px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul {
+            max-width: 100%;
+            gap: 50px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .Footercontact ul {
+            gap: 16px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .footerSocial ul {
+            margin: 16px 0 0 20px;
+        }
+
+        .footerSocial img {
+            width: 25px;
+            height: 25px;
+        }
+
+        #ourwork-tab img {
+            padding-top: 7%;
+            width: 100%;
+            max-width: 170px;
+        }
+
+        #ourwork-tab {
+            gap: 34px;
+        }
+
+        #ourwork-tab button {
+            font-size: 20px;
+            padding: 6%;
+        }
+
+        #our-workContent .tab-pane-link img,
+        #our-workContent .tab-title+img {
+            margin: auto;
+            display: block;
+            width: 100%;
+        }
+
+        .our-works .tab-pane-img {
+            gap: 2%;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input::placeholder,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input.form-control,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li textarea.form-control {
+            font-size: 16px;
+        }
+
+        .logo img {
+            max-width: 220px;
+        }
+
+        .sticky_header .header_top .logo img {
+            max-width: 210px;
+        }
+
+        .header_top {
+            padding: 15px 0;
+        }
+
+        .Contact_Banner_Top {
+            padding: 50px 0 0px;
+            position: relative;
+        }
+
+        .recommended_Text p {
+
+            font-size: 16px;
+        }
+
+        .Sms_Marketing .Sms_Marketing_Content span {
+
+            margin: 2.5% 0;
+        }
+
+        h2 {
+            margin-bottom: 2% !important;
+        }
+
+        .SearchMarketing .SearchMarketing_content span img {
+
+            max-width: 40%;
+            margin: 21px auto;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span img {
+            max-width: 40%;
+        }
+
+        .our-works .tab-pane-link a {
+
+            margin-left: 10px;
+        }
+
+        .font-30 {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .home_outer .home_outer_Slider_Content .right_Part h2 {
+            font-size: 30px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part p,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part p {
+            font-size: 16px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a img {
+            width: 100%;
+            max-width: 15px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a {
+            width: 36px;
+            height: 36px;
+            line-height: 35px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social ul {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            max-width: 55%;
+        }
+
+        .HomeAbout_Outer,
+        .TechMark_Benifits,
+        .footer_Top,
+        .Techymark_Advantages,
+        .technologies_Developmen,
+        .technologies_Development {
+            padding: 40px 0;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left h2,
+        .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3 {
+            font-size: 24px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms p {
+            font-size: 14px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part h3,
+        .our-works h3,
+        .AboutUs_Main_Content h3,
+        .technologies_Development .technologies_Development_content h3,
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3,
+        .search_optimization .search_optimization_content h2,
+        .Social_MediaMarketing .Social_MediaMarketing_content h2,
+        .Sms_Marketing .Sms_Marketing_Content h2,
+        .digital_achieve .digital_achieve_content h2,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner h3,
+        .SearchMarketing .SearchMarketing_content h2 {
+            font-size: 20px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content {
+            padding: 0 40px;
+        }
+
+        .digital_achieve_content {
+            text-align: center;
+        }
+
+        .SearchMarketing .SearchMarketing_content h3 {
+
+            font-size: 22px;
+
+            margin: 26px 0 6px;
+
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a {
+            font-weight: 700;
+            font-size: 21px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner {
+            margin: 0px 0 0 0;
+        }
+
+        .digital_achieve .digital_achieve_content h2 {
+
+
+            margin: 20px 0 0px 0;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content p {
+            max-width: 100%;
+        }
+
+        .HomeAbout_Outer_Content img {
+            width: 50%;
+            max-width: 100%;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content {
+            padding: 0 5px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            max-width: 100%;
+            width: 100%;
+            margin: 68px auto 0;
+            /* row-gap: 49px;
+            column-gap: 35px; */
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 16px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer {
+            gap: 10px;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+            top: -13px;
+            width: 396px;
+            height: 134px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:after {
+            top: -60px;
+            /* width: 297px; */
+            height: 301px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            row-gap: 60px;
+            column-gap: 40px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part h3 {
+            margin-bottom: 0px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part {
+            padding: 30px;
+            width: calc(100% - 280px);
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part {
+            width: 100%;
+            max-width: 285px;
+        }
+
+        .FooterLogo>span>img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterLogo p {
+            font-size: 15px;
+            margin: 22px 0;
+        }
+
+        .footerSocial img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterServices ul li a {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterServices h4 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin: 0px 0 20px 0;
+        }
+
+        #ourwork-tab img {
+            padding-top: 4%;
+            width: 100%;
+            max-width: 110px;
+        }
+
+        #ourwork-tab {
+            gap: 9px;
+        }
+
+        #ourwork-tab button {
+            font-size: 18px;
+            padding: 6%;
+        }
+
+        .font-18 {
+            font-size: 16px;
+        }
+
+        .load-more img {
+            width: 15px;
+        }
+
+        .load-more img {
+            width: 11px;
+        }
+
+        .our-works .tab-pane-link a {
+            bottom: 10px;
+            margin-left: 9px;
+            padding: 6px 8px;
+            font-size: 11px;
+        }
+
+        .sidebarIconToggle {
+            display: block;
+        }
+
+        #sidebarMenu {
+            height: 100%;
+            height: 100%;
+            position: fixed;
+            right: 0;
+            width: 250px;
+            margin-top: 0;
+            transform: translateX(250px);
+            transition: transform 250ms ease-in-out;
+            background: rgba(24, 28, 32, .98);
+            top: 0;
+        }
+
+        .sidebarMenuInner {
+            margin: 0;
+            padding: 10px 0 0 0;
+            display: block;
+        }
+
+        .sidebarMenuInner li a {
+            list-style: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 14px;
+        }
+
+        .sidebarMenuInner li span {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.50);
+            display: block;
+        }
+
+        .header_outer {
+            padding: 0px 0;
+        }
+
+        .sidebarMenuInner li {
+            margin: 0;
+        }
+
+        .sidebarMenuInner li a.active {
+            border-radius: 0px;
+            border-left: none;
+            border-right: none;
+        }
+
+        .Sms_Marketing .Sms_Marketing_Content span img,
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span.large2X img {
+            max-width: 35%;
+        }
+
+        .Sms_Marketing .Sms_Marketing_Content p {
+            text-align: left !important;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group p {
+
+            font-size: 15px;
+            flex-wrap: wrap;
+        }
+
+        .WhatsApp_Marketing .Sms_Marketing_Content span img {
+            max-width: 18%;
+        }
+
+        .digital_marketing_banner {
+            padding: 91px 0 38px;
+        }
+
+        .search_optimization_achieve ul li,
+        .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p,
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p,
+        .SearchMarketing .SearchMarketing_content ul li,
+        .SearchMarketing .SearchMarketing_content p,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p,
+        .Social_MediaMarketing_UserList ul li,
+        .Sms_Marketing .Sms_Marketing_Content p,
+        .Social_MediaMarketing_UserList p,
+        .search_optimization_achieve p {
+
+            font-size: 17px;
+        }
+
+        .Sms_Marketing,
+        .Social_MediaMarketing {
+            padding: 30px 0;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span img {
+            max-width: 35%;
+        }
+
+        .design-text-box img,
+        .aesthetic-sec img {
+            margin-top: 3%;
+            width: 40%;
+            text-align: center;
+        }
+
+        .aesthetic-sec div>img {
+            text-align: center;
+        }
+
+        .ourProcess_design_img img {
+            display: none;
+        }
+
+        .ourProcess_design_leftul {
+            text-align: start;
+        }
+
+        .ourProcess_design_rightul {
+
+            margin-top: 0px;
+        }
+
+        .ourProcess_design_leftul,
+        .ourProcess_design_rightul {
+            flex: 0 0 calc(50% - 11px);
+            justify-content: unset;
+        }
+
+        .ourProcess_design_leftul li:last-child,
+        .ourProcess_design_rightul li:last-child {
+            margin-top: 16px;
+        }
+
+        .ourProcess_design-text h4 {
+
+            display: inline-block;
+            margin-bottom: 5%;
+        }
+
+        .ourProcess_design-text {
+            text-align: left;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3 {
+            margin: 0 0 1% 0;
+        }
+
+        .ourProcess_Development_Inner01 {
+            margin-bottom: 3.4%;
+        }
+
+        .font-30 {
+            font-size: 24px;
+        }
+
+        .aesthetic-sec p {
+            font-size: 17px;
+            ;
+        }
+
+        .ptb-50 {
+            padding: 3vh 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left h2 {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms p {
+            font-size: 13px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3 {
+            font-size: 22px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+            font-size: 15px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left {
+            width: 100%
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+            margin: 0 0 10px 0;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a {
+            transform: scale(1);
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul {
+            gap: 9px;
+            padding-left: 0;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a {
+            width: 47px;
+            height: 47px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a img {
+            max-width: 23px;
+            margin-bottom: 3px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left {
+            margin-bottom: 20px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content {
+            padding: 0 0px;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .our-works h3,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part h3,
+        .whatWeDo_Outer_Heading p {
+            font-size: 18px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content p,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part p,
+        .AboutUs_Main_Content p,
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 15px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part h2 {
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social {
+            margin: 4% 0 0 0;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a {
+            width: 30px;
+            height: 30px;
+            line-height: 26px;
+        }
+
+        .home_outer {
+            padding: 50px 0 30px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part p {
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li:after {
+            left: 0;
+            width: calc(100% - 10px);
+            margin: auto;
+            height: calc(100% - 160px);
+            bottom: 0;
+            top: inherit;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part {
+            width: calc(100% - 0px);
+            padding: 22px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:after {
+            top: 0px;
+            height: 183px;
+            right: -144px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer {
+            gap: 10px;
+            align-items: center;
+            min-height: 60px;
+            height: 70px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div img {
+            max-width: 38px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:before {
+            top: -10px;
+            width: 392px;
+            height: 116px;
+        }
+
+        .AboutUs_Main_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .our-works h3,
+        .technologies_Development .technologies_Development_content h3,
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .SearchMarketing .SearchMarketing_content h2,
+        .search_optimization .search_optimization_content h2,
+        .Social_MediaMarketing .Social_MediaMarketing_content h2,
+        .Sms_Marketing .Sms_Marketing_Content h2 {
+            font-size: 19px;
+            line-height: 30px;
+            padding: 2px 11px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li span img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3 {
+
+            margin: 0 0 3% 0;
+        }
+
+        .SearchMarketing .SearchMarketing_content h2 {
+            margin-bottom: 2%;
+        }
+
+        .SearchMarketing .SearchMarketing_content p {
+
+            font-size: 16px;
+        }
+
+        .SearchMarketing {
+
+            padding: 36px 0 30px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul {
+            max-width: 100%;
+            gap: 20px;
+        }
+
+        .whatWeDo_Outer {
+            padding: 30px 0 40px;
+        }
+
+        .font-18 {
+            font-size: 15px;
+        }
+
+        .Development_Banner .Development_Banner_text h2 {
+            font-size: 24px;
+        }
+
+        .logo img {
+            max-width: 190px;
+        }
+
+        .search_optimization .search_optimization_content ul {
+            display: grid;
+            gap: 0px;
+            max-width: 100%;
+            margin: auto;
+            margin-top: 12px;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a {
+
+            font-size: 19px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .search_optimization_achieve {
+
+            overflow: hidden;
+        }
+
+        .search_optimization_achieve li {
+            margin: 0;
+            inline-size: 89%;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a {
+            font-size: 18px;
+        }
+
+        .Development_Banner {
+
+            padding: 0px;
+
+        }
+
+        .font-30 {
+            font-size: 20px;
+        }
+
+        .trendy_web_app-text p,
+        .sleek-web-text ul p {
+            color: #fff;
+            font-size: 17px;
+        }
+
+        .trendy_web_app img {
+            text-align: center;
+            width: 100%;
+        }
+
+
+        .HomeAbout_Outer,
+        .TechMark_Benifits,
+        .footer_Top,
+        .Techymark_Advantages,
+        .technologies_Developmen,
+        .technologies_Development {
+            padding: 30px 0;
+        }
+
+
+    }
+
+    @media screen and (max-width: 676px) {
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box {
+            background: #FAFFFF;
+            border-radius: 15px;
+            width: 96%;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li:after,
+        .Techymark_Advantages .Techymark_Advantages_Content ul li::before {
+            display: none;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            row-gap: 16px;
+            column-gap: 0px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box:before {
+            border: 3px solid transparent;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            max-width: 100%;
+            width: 100%;
+            margin: 28px auto 0;
+        }
+
+        .footer_Top .footer_Top_content .right_Part {
+            width: 50%;
+        }
+
+        .Footercontact img {
+            width: 20px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .footerSocial ul {
+            display: flex;
+            margin: 22px 0 0 23px;
+            gap: 24px;
+        }
+
+        .footerSocial img {
+            width: 26px;
+            height: 26px;
+            object-fit: contain;
+        }
+
+        .footerCopyright .footerCopyright_Content p,
+        .footerCopyright .footerCopyright_Content div,
+        .footerCopyright .footerCopyright_Content div a {
+            font-size: 14px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li textarea.form-control {
+            height: 84px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input::placeholder,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li input.form-control,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li textarea.form-control {
+            font-size: 14px;
+        }
+
+        .technologies_Development .technologies_Development_boxes ul {
+
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            margin-bottom: 27px;
+        }
+
+        .technologies_Development .technologies_Development_content {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* .trendy_web_app .technologies_Development_content {
+            text-align: left;
+        } */
+
+        .technologies_Development .technologies_Development_boxes ul li p {
+
+            font-size: 15px;
+        }
+
+        .technologies_Development .technologies_Development_boxes .whiteBtn {
+
+            font-size: 16px;
+
+            padding: 7px;
+        }
+
+        .ourProcess_Development {
+            padding: 40px 0px;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content h2 {
+            text-align: center;
+            margin: 0 0 28px 0;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content {
+            text-align: center;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3 {
+            text-align: center;
+        }
+
+        .ourProcess_Development_Inner01 {
+            margin: 0 0 4% 0px;
+        }
+
+        .recommended_Text p {
+            font-size: 15px;
+        }
+
+        .recommended_Text span {
+
+            font-size: 16px;
+        }
+
+        .technologies_Development .technologies_Development_boxes ul li {
+
+            padding: 25px 20px 18px 18px;
+        }
+
+        .technologies_Development_boxes img {
+            width: 100%;
+            max-width: 120px;
+        }
+
+        .Development_Banner .Development_Banner_text h2,
+        .digital_achieve .digital_achieve_content h2 {
+            font-size: 22px;
+        }
+
+        .Development_Banner .Development_Banner_text p,
+        .digital_achieve .digital_achieve_content p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .Development_Banner .Development_Banner_text {
+            top: 30%;
+            left: 0px;
+            right: 0;
+            text-align: center;
+            margin: auto;
+            text-align: center;
+        }
+
+        .digital_marketing_banner .Development_Banner_text {
+            top: 50%;
+        }
+
+        .Development_Banner .Development_Banner_text h2 {
+
+
+            margin: 0 0 1px 0px;
+        }
+
+        .Development_Banner_text.design_banner_text h2 {
+            margin-top: 2%;
+        }
+
+        .Development_Banner_Outer {
+
+            padding: 75px 0 22px;
+        }
+
+        .logo img {
+            max-width: 170px;
+        }
+
+        .digital_achieve .digital_achieve_content {
+
+            padding: 0 0px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li span img {
+            max-width: 130px;
+            margin-bottom: 20px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p {
+
+            font-size: 16px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .digital_achieve .digital_achieve_content h2 {
+            text-align: center;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner {
+            margin: 2px 0 0 0;
+            text-align: center;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner h3 {
+
+            font-size: 17px;
+        }
+
+        .digital_achieve .digital_achieve_content h2 {
+
+
+
+
+            margin: 17px 0 0px 0;
+        }
+
+        .search_optimization_achieve ul li,
+        .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p,
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p,
+        .SearchMarketing .SearchMarketing_content ul li,
+        .SearchMarketing .SearchMarketing_content p,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p,
+        .Social_MediaMarketing_UserList ul li,
+        .Sms_Marketing .Sms_Marketing_Content p,
+        .search_optimization_achieve p {
+
+            font-size: 16px;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxImg img {
+            width: 100%;
+            max-width: 50%;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box:after {
+            width: calc(100% - 0px);
+        }
+
+        .search_optimization .search_optimization_content ul li {
+            margin: 11px 0px;
+        }
+
+        .aesthetic-sec p {
+            font-size: 16px;
+            text-align: left !important;
+        }
+
+        .whatWeDo_Outer_Heading {
+            margin: 0 0 10px 0;
+
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part h3,
+        .AboutUs_Main_Content h3,
+        .our-works h3 {
+            font-size: 17px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part h2 {
+            font-size: 21px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part p {
+            font-size: 14px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a {
+            width: 26px;
+            height: 26px;
+            line-height: 24px;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social li a img {
+            max-width: 13px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part {
+            width: 100%;
+            max-width: 175px;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li:after {
+            left: 0;
+            width: calc(100% - 0px);
+            margin: auto;
+            height: calc(100% - 80px);
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part {
+            width: calc(100% - 0px);
+            padding: 18px;
+        }
+
+        .HomeAbout_Outer,
+        .Techymark_Advantages,
+        .whatWeDo_Outer,
+        .TechMark_Benifits,
+        .footer_Top {
+            padding: 30px 0;
+        }
+
+        .whatWeDo_Outer_ListingBox ul {
+            max-width: 100%;
+            gap: 13px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer {
+            gap: 0px;
+            align-items: center;
+            height: 100px;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div:first-child {
+            width: 100%;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div img {
+            max-width: 38px;
+            margin-bottom: 12px;
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 14px;
+            padding: 0 0px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            row-gap: 12px;
+            column-gap: 12px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box {
+            width: 100%;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            max-width: 100%;
+            width: 100%;
+            margin: 6% auto 0;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box:before {
+            border: 2px solid transparent;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div img {
+            margin-bottom: 6px;
+            width: 28px;
+            height: 28px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 13px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .Footercontact ul li a i {
+            margin-right: 12px;
+        }
+
+        .Footercontact img {
+            width: 16px;
+        }
+
+        .Footercontact p,
+        .footer_Top .footer_Top_content .left_Part .FooterServices ul li a {
+            font-size: 14px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterServices ul {
+            gap: 8px;
+        }
+
+        .footerSocial img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .footerSocial ul {
+            display: flex;
+            margin: 11px 0 0 0px;
+            gap: 12px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .Footercontact ul {
+            gap: 9px;
+        }
+
+        #ourwork-tab img {
+            padding-top: 4%;
+            width: 100%;
+            max-width: 80px;
+        }
+
+        #ourwork-tab {
+            gap: 6px;
+        }
+
+        #ourwork-tab button {
+            font-size: 16px;
+            padding: 4%;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a {
+            width: 37px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a img {
+            max-width: 18px;
+            margin-bottom: 3px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a img {
+            max-width: 20px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+            margin: 0 0 2px 0;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a {
+            border: 2px solid #0CDBE6;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant {
+            flex-direction: column;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul {
+            margin: 20px 0 0 0;
+            gap: 10px;
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms {
+            width: 100%;
+            text-align: center;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3 {
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Map {
+            width: 100%;
+            margin-top: 7%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .ContactGet_Touch_Map img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li a.submit_Btn {
+            font-size: 16px;
+        }
+
+        .ContactGet_Touch {
+            padding: 20px 0 30px;
+        }
+
+        .AboutUs_Main_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .our-works h3,
+        .technologies_Development .technologies_Development_content h3,
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3,
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .digital_achieve .digital_achieve_content h2 {
+            font-size: 15px;
+
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .digital_achieve .digital_achieve_content h2 {
+            text-align: center;
+            margin: 0 0 12px 0;
+        }
+
+        .Social_MediaMarketing_UserList ul {
+            margin: 0 0 0px 26px !important;
+            max-width: 95% !important;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .Social_MediaMarketing_UserList ul li {
+            text-align: left;
+        }
+
+        .Social_MediaMarketing_UserList h3 {
+            font-weight: 400;
+            font-size: 18px
+        }
+
+        .Social_MediaMarketing_UserList h3 {
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li span img {
+            max-width: 90px;
+            margin: 10px 0px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul:after {
+
+            width: 3px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul:before {
+
+            height: 3px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li {
+            text-align: center;
+            padding: 6px 6px;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul {
+            margin: 20px auto 0 auto;
+
+            gap: 18px 0;
+        }
+
+        .search_optimization {
+            padding: 25px 0px;
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group a {
+            font-size: 15px;
+            line-height: 16px;
+
+
+        }
+
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group span img {
+
+            margin: 13px 0;
+        }
+
+        .search_optimization_achieve ul li,
+        .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p,
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p,
+        .SearchMarketing .SearchMarketing_content ul li,
+        .SearchMarketing .SearchMarketing_content p,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p,
+        .Social_MediaMarketing_UserList ul li,
+        .Sms_Marketing .Sms_Marketing_Content p,
+        .search_optimization_achieve p {
+
+            font-size: 15px;
+        }
+
+        .search_optimization .search_optimization_content .search_optimization_content_Banner {
+            margin: 60px 0 60px;
+            position: relative;
+        }
+
+        .search_optimization_achieve h3 {
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .search_optimization .search_optimization_content ul li {
+            margin: 11px 0px;
+        }
+
+        .search_optimization_achieve ul {
+            margin: 0 0 20px 25px !important;
+        }
+
+        .SearchMarketing .SearchMarketing_content p {
+
+            padding: 0px 2%;
+
+        }
+
+        .SearchMarketing .SearchMarketing_content h3 {
+            font-size: 16px;
+            margin: 20px 0 6px;
+        }
+
+        #our-workContent .tab-title {
+            margin-bottom: 3%;
+        }
+
+        .font-30 {
+            font-size: 18px;
+        }
+
+        .trendy_web_app-text p,
+        .sleek-web-text ul p {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .sleek-web-text ul {
+
+            padding-left: 2rem;
+
+        }
+
+        .trendy_web_app img {
+            text-align: center;
+
+            margin: auto;
+        }
+
+        .trendy_web_app>.col-lg-4>img {
+            text-align: center;
+        }
+
+        .recommended_Text p {
+            font-size: 14px;
+        }
+
+        .SearchMarketing .SearchMarketing_content ul {
+
+            margin: 0 0 0 25px;
+            max-width: 80%;
+        }
+
+        .Sms_Marketing,
+        .Social_MediaMarketing {
+            padding: 30px 0 0;
+        }
+
+        .WhatsApp_Marketing {
+            padding-bottom: 20px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterLogo p {
+            font-size: 14px;
+            margin: 17px 0;
+        }
+
+        .ptb-50 {
+            padding: 2vh 0;
+        }
+
+        .sticky_header .header_top .logo img {
+            max-width: 170px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content p,
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part p,
+        .AboutUs_Main_Content p,
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer>div p {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .home_outer,
+        .digital_achieve {
+            padding: 20px 0 7px;
+        }
+
+        .HomeAbout_Outer,
+        .TechMark_Benifits,
+        .footer_Top {
+            padding: 20px 0;
+        }
+
+        .home_outer .home_outer_Slider_Content .left_Part,
+        .home_outer .home_outer_Slider_Content .right_Part {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part p {
+            text-align: center;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part h2 {
+            margin-bottom: 2%;
+        }
+
+        .home_outer .home_outer_Slider_Content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .home_outer .home_outer_Slider_Content .left_Part img {
+            max-width: 75%;
+            padding-bottom: 5%;
+        }
+
+        .home_outer .home_outer_Slider_Content .right_Part .home_outer_Social ul {
+            gap: 10px;
+            max-width: 100%;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content p {
+            font-size: 14px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .our-works h3 {
+            font-size: 16px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content {
+            padding: 0 0px;
+        }
+
+        .AboutUs_Main_Content h3 {
+            font-size: 14px;
+            padding: 5px 9px;
+        }
+
+        .AboutUs_Main_Content {
+            padding: 0px 18px 12px;
+        }
+
+        .AboutUs_Main_Content p {
+            font-size: 14px;
+        }
+
+        .AboutUs_Main_Content h3 {
+            top: -26px;
+            left: 32px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            row-gap: 8px;
+            column-gap: 8px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part .FooterServices h4,
+        .footer_Top .footer_Top_content .right_Part .Footercontact h4 {
+            font-size: 16px;
+            margin: 0px 0 17px 0;
+        }
+
+        .footerCopyright .footerCopyright_Content p,
+        .footerCopyright .footerCopyright_Content div,
+        .footerCopyright .footerCopyright_Content div a {
+            font-size: 13px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part,
+        .footer_Top .footer_Top_content .right_Part {
+            width: 85%;
+        }
+
+        .footer_Top .footer_Top_content {
+            flex-wrap: wrap;
+        }
+
+        #ourwork-tab button {
+            font-size: 14px;
+        }
+
+        #ourwork-tab img {
+            padding-top: 4%;
+            width: 100%;
+            max-width: 60px;
+        }
+
+        .HomeAbout_Outer .HomeAbout_Outer_Content h3,
+        .Techymark_Advantages .Techymark_Advantages_Content h3,
+        .whatWeDo_Outer_Heading p,
+        .our-works h3,
+        .ourProcess_Development .ourProcess_Development_Content h2,
+        .SearchMarketing .SearchMarketing_content h2,
+        .search_optimization .search_optimization_content h2,
+        .Social_MediaMarketing .Social_MediaMarketing_content h2,
+        .Sms_Marketing .Sms_Marketing_Content h2 {
+            font-size: 14px;
+        }
+
+        .font-18 {
+            font-size: 13px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right {
+            width: 80%;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a {
+            width: 30px;
+            height: 30px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li a img {
+            max-width: 15px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Right ul li:hover a img {
+            max-width: 13px;
+            margin-bottom: 3px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left h2,
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms h3,
+        .digital_achieve .digital_achieve_content h2 {
+            font-size: 18px;
+        }
+
+        .Contact_Banner_Top .Contact_Banner_Top_Content .contact_Left p {
+            font-size: 13px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms p {
+            font-size: 11px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Map {
+            margin-top: 7%;
+            height: 125px;
+        }
+
+        .ContactGet_Touch .ContactGet_Touch_Contant .ContactGet_Touch_Forms ul li textarea.form-control {
+            height: 71px;
+        }
+
+        .technologies_Development .technologies_Development_boxes ul li {
+            padding: 20px 16px 15px 16px;
+        }
+
+        .technologies_Development .technologies_Development_content h3 {
+            line-height: 20px;
+        }
+
+        .technologies_Development .technologies_Development_boxes ul li p {
+            font-size: 14px;
+        }
+
+        .ourProcess_Development .ourProcess_Development_Content .ourProcess_Development_Inner01 h3 {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        .Development_Banner .Development_Banner_text h2 {
+            font-size: 19px;
+        }
+
+        .Development_Banner .Development_Banner_text p {
+            font-size: 13px;
+
+        }
+
+        .sleek-web-text ul {
+            padding-left: 1.5rem;
+        }
+
+        .ourProcess_Development,
+        .technologies_Development,
+        .recommended_Text {
+            padding: 20px 0px;
+        }
+
+        .technologies_Development .technologies_Development_boxes ul {
+
+            gap: 7px;
+            margin-bottom: 17px;
+        }
+
+        .aesthetic-sec p {
+            font-size: 14px;
+        }
+
+        .search_optimization_achieve ul li,
+        .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p,
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p,
+        .SearchMarketing .SearchMarketing_content ul li,
+        .SearchMarketing .SearchMarketing_content p,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p,
+        .Social_MediaMarketing_UserList ul li,
+        .Sms_Marketing .Sms_Marketing_Content p,
+        .search_optimization_achieve p,
+        .Social_MediaMarketing .Social_MediaMarketing_content .Social_Group p {
+
+            font-size: 14px;
+
+        }
+
+        .search_optimization .search_optimization_content .search_optimization_content_Banner {
+            margin: 90px 0 70px;
+            position: relative;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText {
+            width: 80%;
+            padding: 15px;
+            position: relative;
+            z-index: 99;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxImg {
+            width: 30%;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxImg img {
+            width: 100%;
+            max-width: 86%;
+        }
+
+        .our-works h3 {
+            line-height: 25px;
+            margin-bottom: 1%;
+        }
+
+        #our-workContent {
+            padding: 5% 0;
+        }
+
+        #our-workContent .tab-title {
+            margin-bottom: 3%;
+        }
+
+        .font-30 {
+            font-size: 16px;
+        }
+
+        .trendy_web_app-text p,
+        .sleek-web-text ul p {
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .trendy_web_app img {
+            text-align: center;
+            width: 60%;
+            margin: auto;
+        }
+
+
+        .trendy_web_app .col-lg-4.col-md-4.col-sm-5,
+        .trendy_web_app .col-lg-7.col-md-6.col-sm-5 {
+
+            text-align: center;
+        }
+
+        .font-20 {
+            font-size: 14px;
+
+        }
+
+        .Social_MediaMarketing_UserList p,
+        .trendy_web_app-text p,
+        .sleek-web-text ul p,
+        p {
+            font-size: 14px;
+
+            line-height: 22px;
+        }
+
+        .ourProcess_design {
+            display: flex;
+            gap: 4px;
+        }
+
+        .ourProcess_design_leftul,
+        .ourProcess_design_rightul {
+            flex: 0 0 calc(50% - 0px);
+        }
+
+        .Social_MediaMarketing_UserList h3 {
+
+            font-size: 16px;
+        }
+
+        .our-works .tab-pane-img.tab-pane-img-grid-2 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .AboutUs_Main_Content {
+            padding: 0px 12px 9px;
+        }
+
+        .AboutUs_Main {
+            padding: 50px 0 17px;
+        }
+
+        .AboutUs_Main_Content h3 {
+            font-size: 14px;
+            padding: 2px 7px;
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .Techymark_Advantages .Techymark_Advantages_Content ul li .Techymark_Advantages_Box .Techymark_Advantages_Box_outer {
+            height: auto;
+            min-height: auto;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .right_Part {
+            padding: 10px 0;
+        }
+
+        .footerCopyright .footerCopyright_Content {
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .footerCopyright {
+            padding: 9px 0;
+        }
+
+        .FooterLogo>span>img {
+            width: 100%;
+            max-width: 165px;
+        }
+
+        .footer_Top .footer_Top_content .right_Part .Footercontact ul {
+            gap: 5px;
+        }
+
+        #ourwork-tab button {
+            font-size: 10px;
+        }
+
+        #ourwork-tab img {
+            padding-top: 4%;
+            width: 100%;
+            max-width: 44px;
+        }
+
+        .search_optimization_achieve ul li,
+        .search_optimization .search_optimization_content .search_optimization_content_Banner .search_optimization_content_Banner_Text p,
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText p,
+        .SearchMarketing .SearchMarketing_content ul li,
+        .SearchMarketing .SearchMarketing_content p,
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p,
+        .Social_MediaMarketing_UserList ul li,
+        .Sms_Marketing .Sms_Marketing_Content p,
+        .Social_MediaMarketing_UserList p {
+            font-size: 14px;
+        }
+
+        .search_optimization .search_optimization_content .search_optimization_content_Banner {
+            margin: 100px 0 100px;
+            position: relative;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box .search_optimization_boxText {
+            width: 100%;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box,
+        .search_optimization .search_optimization_content ul li:nth-child(2n) .search_optimization_content_box {
+
+            flex-direction: column;
+        }
+
+        .search_optimization .search_optimization_content ul li .search_optimization_content_box:after {
+
+            top: 44%;
+
+
+            height: 108%;
+        }
+
+        .search_optimization .search_optimization_content ul li {
+            margin: 15px 0px;
+        }
+
+        .footer_Top .footer_Top_content .left_Part,
+        .footer_Top .footer_Top_content .right_Part {
+            width: 92%;
+        }
+
+        #our-workContent .tab-title {
+            margin-bottom: 3%;
+        }
+
+        .font-30 {
+            font-size: 15px;
+        }
+
+        .trendy_web_app-text p,
+        .sleek-web-text ul p {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .ourProcess_design_leftul,
+        .ourProcess_design_rightul {
+            flex: 0 0 calc(100% - 0px);
+        }
+
+        .ourProcess_design {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .ourProcess_design-text h4 {
+            display: inline-block;
+            margin-bottom: 3%;
+        }
+
+        .trendy_web_app img {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+
+        .sticky_header .header_top .logo img {
+            max-width: 160px;
+        }
+
+    }
+
+    @media screen and (max-width: 360px) {
+        .whatWeDo_Outer_Heading h3 img {
+            display: none;
+        }
+
+        .whatWeDo_Outer_Heading p {
+            margin: 0;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .whatWeDo_Outer_ListingBox ul li .whatWeDo_Box .left_Part img {
+            max-width: 120px;
+            margin: auto;
+            display: block;
+        }
+
+        .search_optimization .search_optimization_content ul li {
+            margin: 20px 0px 0;
+        }
+
+        .digital_achieve .digital_achieve_content .digital_achieve_content_Inner ul li p {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
